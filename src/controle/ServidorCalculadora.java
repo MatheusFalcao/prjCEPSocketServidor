@@ -9,6 +9,8 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import modelo.SqliteJDBC;
+
 
 public class ServidorCalculadora {
 	private ServerSocket sckServidor;
@@ -22,6 +24,8 @@ public class ServidorCalculadora {
 			OutputStream canalDeSaida;
 			BufferedReader entrada;
 			PrintWriter saida;
+			
+			
 
 			try {
 				canalDeEntrada = requisicao.getInputStream();

@@ -2,16 +2,13 @@ package controle;
 
 import java.io.IOException;
 
-import modelo.SqliteJDBC;
+import modelo.MySql;
 
 public class ProgramaServidor {
 	public static void main(String[] args) throws IOException {
-		//new ServidorCalculadora();
+		System.out.println("Servidor Ativo e esperando por requisições");
+		new ServidorCep();
 		
-		SqliteJDBC bd = new SqliteJDBC();
-		if(bd.conecta()){
-			System.out.println("SUCESSO!");
-		}
 	}
 
 }
